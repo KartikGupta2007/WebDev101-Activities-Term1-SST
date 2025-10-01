@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+<style>
+    h1{
+        text-align: center;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        background-color: pink;
+    }
+    .container{
+        margin: auto;
+        display: grid;
+        background-color:orange;
+        grid-template-columns: repeat(3,1fr);
+        width: 1000px;
+        height: 1200px ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #box{
+        background-color:blanchedalmond;
+        margin:10px;
+        padding:3px;
+    }
+    .box1{
+        grid-column: 1/4;
+        border: 2px solid purple;
+    }
+    .box2{
+        grid-row: 2/4;
+        border: 2px solid green;
+    }
+    .box3{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border: 2px solid black;
+    }
+    .box4{
+        grid-column: 3/4;
+        grid-row: 2/4;
+        border: 2px solid black;
+    }
+    .box5{
+        border: 2px solid blue;
+
+    }
+</style>
+</head>
+<body>
+    <br>
+    <h1>Concept of Grid</h1><br><br>
+    <div class="container">
+        <div class="box1" id="box">Box 1</div>
+        <div class="box2" id="box"> Box 2</div>
+        <div class="box3" id="box">Box 3</div>
+        <div class="box4" id="box">Box 4</div>
+        <div class="box5" id="box">Box 5</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        
+        div.card{
+            display: flex;
+            width:550px;
+            height: 270px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 5px 5px 20px;
+            margin: auto;
+            flex-direction: row;
+        }
+        div.me{
+            height: 200px;
+            width: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+        img{
+            height: 160px;
+            width: 180px;
+            margin-top: 40px;
+        }
+        div.about{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            width: 300px;
+            padding-top: 30px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 8px;
+        }
+        div.button{
+            
+            color: white;
+            
+            border-radius: 8px;
+            border-color: dodgerblue;
+            margin: 20px;
+            flex-direction: row;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        button{
+            background-color: dodgerblue;
+            border-color: dodgerblue;
+            border-radius:8px;
+        }
+        button:hover{
+            background-color: cornflowerblue;
+        }
+        @media (max-width: 400px){
+            div.card{
+                flex-direction: column;
+                
+                width:320px;
+                height:480px;
+            }
+            div.me{
+                width: 100%;
+                height:50%;
+                padding-left: 0px;
+                margin-top: 0px;
+                margin-left: 50px
+                
+            }
+            div.about{
+                width: 100%;
+                height: 50%;
+                margin-top: 20px
+                
+            }
+            div.button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
+        }
+        button{
+            margin: 8px;
+            
+        }
+        button#b1{
+            width: 280px;
+            height: 25px;
+        }
+         button#b2{
+            width: 280px;
+            height: 25px;
+        }
+
+        }
+        
+       
+    </style>
+</head>
+<body>
+    
+       <div class="card">
+        <div class="me">
+            <img src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1906669723.jpg" alt="">
+            
+            <h2>Kartik Gupta</h2>
+        </div>
+        <div class="about">
+            <div><p>Not a Good Frontend Developer. Hence Prooved!!!🤣</p>
+            <p>Requires Coffee at least twice a day!</p>
+        </div>
+            
+            <div class="button">
+              <div id="b1"><button id="b1">Contact</button></div>
+             <div><button id="b2">Portfolio</button></div>
+            </div>
+          
+        </div>
+
+    </div> 
+    </div>
+    
+
+    
+</body>
+</html>

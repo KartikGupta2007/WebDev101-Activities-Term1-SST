@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Gallery</title>
+  <style>
+    .dogs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px;
+    }
+
+    .dogs .box {
+      width: 100%;
+      height: 200px;
+    }
+
+    .dogs img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      display: block;
+    }
+    @media (max-width: 900px) {
+    .dogs { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .dogs { grid-template-columns: 1fr; }
+  }
+  </style>
+</head>
+<body>
+  <h1>Dog Gallery</h1>
+  <div class="dogs">
+    <div class="box"><img src="https://housing.com/news/wp-content/uploads/2023/07/Cute-dog-breeds-that-make-the-best-pets-f.jpg" alt="dog1"></div>
+    <div class="box"><img src="https://images.theconversation.com/files/625049/original/file-20241010-15-95v3ha.jpg?ixlib=rb-4.1.0&rect=12%2C96%2C2671%2C1335&q=45&auto=format&w=1356&h=668&fit=crop" alt="dog2"></div>
+    <div class="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHIQPM5MQe7flMzWIVEF7FbJVBj2tWNHbPww&s" alt="dog3"></div>
+    <div class="box"><img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" alt="dog4"></div>
+    <div class="box"><img src="https://images.pexels.com/photos/1938126/pexels-photo-1938126.jpeg" alt="dog5"></div>
+    <div class="box"><img src="https://images.pexels.com/photos/319975/pexels-photo-319975.jpeg" alt="dog6"></div>
+    <div class="box"><img src="https://images.pexels.com/photos/1287830/pexels-photo-1287830.jpeg" alt="dog7"></div>
+    <div class="box"><img src="https://images.pexels.com/photos/68669/wolf-predator-wildlife-montana-68669.jpeg" alt="dog8"></div>
+    <div class="box"><img src="https://images.pexels.com/photos/1639786/pexels-photo-1639786.jpeg" alt="dog9"></div>
+  </div>
+</body>
+</html>
